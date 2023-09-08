@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Document</title>
+</head>
+<body>
+<h1>My Own Currency Exchange</h1>
+<div id="wrapper-for-inserting"><table cellpadding="0" cellspacing="0" class="rb" id="rb" onmouseover="mouse_event_handler(event, 4, -1)" rules="all" width="100%">
+<tr>
+<td class="hd" rowspan="2">
+</td>
+<td class="hd" colspan="2" rowspan="2">
+<a href="javascript:__doPostBack('ctl00$Content$RB$lbBank','')" id="ctl00_Content_RB_lbBank" title="Դասակարգել">
+    Բանկ
+   </a>
+<br/>
+</td>
+<td class="hd" rowspan="2">
+<a href="javascript:__doPostBack('ctl00$Content$RB$lbBranch','')" id="ctl00_Content_RB_lbBranch" title="Դասակարգել">
+    Մասնա
+    <br/>
+    ճյուղեր
+   </a>
+<br/>
+</td>
+<td class="hd" rowspan="2">
+<a href="javascript:__doPostBack('ctl00$Content$RB$lbDate','')" id="ctl00_Content_RB_lbDate" title="Դասակարգել">
+    Ամսաթիվ
+   </a>
+<br/>
+<img border="0" id="ctl00_Content_RB_ImgRateDate" src="images/down.gif"/>
+</td>
+<td class="hd" colspan="2" width="84px">
+<img alt="currency" border="0" height="13" id="ctl00_Content_RB_imgC1" src="images/currency/icon/USD.gif" width="18"/>
+<select id="ctl00_Content_RB_dlCurrency1" name="ctl00$Content$RB$dlCurrency1">
+<option selected="selected" value="1 USD">
+     1 USD
+    </option>
+<option value="1 EUR">
+     1 EUR
+    </option>
+<option value="1 RUR">
+     1 RUR
+    </option>
+<option value="1 GBP">
+     1 GBP
+    </option>
+<option value="1 GEL">
+     1 GEL
+    </option>
+<option value="1 CHF">
+     1 CHF
+    </option>
+<option value="1 CAD">
+     1 CAD
+    </option>
+<option value="1 AED">
+     1 AED
+    </option>
+<option value="1 CNY">
+     1 CNY
+    </option>
+<option value="1 AUD">
+     1 AUD
+    </option>
+<option value="10 JPY">
+     10 JPY
+    </option>
+<option value="1 SEK">
+     1 SEK
+    </option>
+<option value="1 HKD">
+     1 HKD
+    </option>
+<option value="10 KZT">
+     10 KZT
+    </option>
+<option value="1 XAU">
+     1 XAU
+    </option>
+</select>
+</td>
+<td class="hd" colspan="2" width="84px">
+<img alt="currency" border="0" height="13" id="ctl00_Content_RB_imgC2" src="images/currency/icon/EUR.gif" width="18"/>
+<select id="ctl00_Content_RB_dlCurrency2" name="ctl00$Content$RB$dlCurrency2">
+<option value="1 USD">
+     1 USD
+    </option>
+<option selected="selected" value="1 EUR">
+     1 EUR
+    </option>
+<option value="1 RUR">
+     1 RUR
+    </option>
+<option value="1 GBP">
+     1 GBP
+    </option>
+<option value="1 GEL">
+     1 GEL
+    </option>
+<option value="1 CHF">
+     1 CHF
+    </option>
+<option value="1 CAD">
+     1 CAD
+    </option>
+<option value="1 AED">
+     1 AED
+    </option>
+<option value="1 CNY">
+     1 CNY
+    </option>
+<option value="1 AUD">
+     1 AUD
+    </option>
+<option value="10 JPY">
+     10 JPY
+    </option>
+<option value="1 SEK">
+     1 SEK
+    </option>
+<option value="1 HKD">
+     1 HKD
+    </option>
+<option value="10 KZT">
+     10 KZT
+    </option>
+<option value="1 XAU">
+     1 XAU
+    </option>
+</select>
+</td>
+<td class="hd" colspan="2" width="84px">
+<img alt="currency" border="0" height="13" id="ctl00_Content_RB_imgC3" src="images/currency/icon/RUR.gif" width="18"/>
+<select id="ctl00_Content_RB_dlCurrency3" name="ctl00$Content$RB$dlCurrency3">
+<option value="1 USD">
+     1 USD
+    </option>
+<option value="1 EUR">
+     1 EUR
+    </option>
+<option selected="selected" value="1 RUR">
+     1 RUR
+    </option>
+<option value="1 GBP">
+     1 GBP
+    </option>
+<option value="1 GEL">
+     1 GEL
+    </option>
+<option value="1 CHF">
+     1 CHF
+    </option>
+<option value="1 CAD">
+     1 CAD
+    </option>
+<option value="1 AED">
+     1 AED
+    </option>
+<option value="1 CNY">
+     1 CNY
+    </option>
+<option value="1 AUD">
+     1 AUD
+    </option>
+<option value="10 JPY">
+     10 JPY
+    </option>
+<option value="1 SEK">
+     1 SEK
+    </option>
+<option value="1 HKD">
+     1 HKD
+    </option>
+<option value="10 KZT">
+     10 KZT
+    </option>
+<option value="1 XAU">
+     1 XAU
+    </option>
+</select>
+</td>
+<td class="hd" colspan="2" width="84px">
+<img alt="currency" border="0" height="13" id="ctl00_Content_RB_imgC4" src="images/currency/icon/GBP.gif" width="18"/>
+<select id="ctl00_Content_RB_dlCurrency4" name="ctl00$Content$RB$dlCurrency4">
+<option value="1 USD">
+     1 USD
+    </option>
+<option value="1 EUR">
+     1 EUR
+    </option>
+<option value="1 RUR">
+     1 RUR
+    </option>
+<option selected="selected" value="1 GBP">
+     1 GBP
+    </option>
+<option value="1 GEL">
+     1 GEL
+    </option>
+<option value="1 CHF">
+     1 CHF
+    </option>
+<option value="1 CAD">
+     1 CAD
+    </option>
+<option value="1 AED">
+     1 AED
+    </option>
+<option value="1 CNY">
+     1 CNY
+    </option>
+<option value="1 AUD">
+     1 AUD
+    </option>
+<option value="10 JPY">
+     10 JPY
+    </option>
+<option value="1 SEK">
+     1 SEK
+    </option>
+<option value="1 HKD">
+     1 HKD
+    </option>
+<option value="10 KZT">
+     10 KZT
+    </option>
+<option value="1 XAU">
+     1 XAU
+    </option>
+</select>
+</td>
+</tr>
+<tr>
+<td class="hd">
+<a href="javascript:__doPostBack('ctl00$Content$RB$lbb1','')" id="ctl00_Content_RB_lbb1" title="Դասակարգել">
+    Առք
+   </a>
+<br/>
+</td>
+<td class="hd">
+<a href="javascript:__doPostBack('ctl00$Content$RB$lbs1','')" id="ctl00_Content_RB_lbs1" title="Դասակարգել">
+    Վաճ.
+   </a>
+<br/>
+</td>
+<td class="hd">
+<a href="javascript:__doPostBack('ctl00$Content$RB$lbb2','')" id="ctl00_Content_RB_lbb2" title="Դասակարգել">
+    Առք
+   </a>
+<br/>
+</td>
+<td class="hd">
+<a href="javascript:__doPostBack('ctl00$Content$RB$lbs2','')" id="ctl00_Content_RB_lbs2" title="Դասակարգել">
+    Վաճ.
+   </a>
+<br/>
+</td>
+<td class="hd">
+<a href="javascript:__doPostBack('ctl00$Content$RB$lbb3','')" id="ctl00_Content_RB_lbb3" title="Դասակարգել">
+    Առք
+   </a>
+<br/>
+</td>
+<td class="hd">
+<a href="javascript:__doPostBack('ctl00$Content$RB$lbs3','')" id="ctl00_Content_RB_lbs3" title="Դասակարգել">
+    Վաճ.
+   </a>
+<br/>
+</td>
+<td class="hd">
+<a href="javascript:__doPostBack('ctl00$Content$RB$lbb4','')" id="ctl00_Content_RB_lbb4" title="Դասակարգել">
+    Առք
+   </a>
+<br/>
+</td>
+<td class="hd">
+<a href="javascript:__doPostBack('ctl00$Content$RB$lbs4','')" id="ctl00_Content_RB_lbs4" title="Դասակարգել">
+    Վաճ.
+   </a>
+<br/>
+</td>
+</tr>
+<tr id="5ee70183-87fe-4799-802e-ef7f5e7323db">
+<td>
+   1.
+  </td>
+<td class="bank">
+<img align="left" alt="AraratBank" border="0" height="16" src="https://rate.am/images/organization/logo/b5700b0d821c412a8a69a22f5ce350c0.jpg" width="32"/>
+<a href="/am/bank/araratbank">
+    ԱրարատԲանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/araratbank">
+    55
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:36
+  </td>
+<td>
+<span class="lg">
+    380.50
+   </span>
+</td>
+<td>
+<span class="bestlg">
+    386.50
+   </span>
+</td>
+<td>
+   405
+  </td>
+<td>
+   418
+  </td>
+<td>
+   3.90
+  </td>
+<td>
+   4.10
+  </td>
+<td>
+   460
+  </td>
+<td>
+   500
+  </td>
+</tr>
+<tr id="133240fd-5910-421d-b417-5a9cedd5f5f7">
+<td>
+   2.
+  </td>
+<td class="bank">
+<img align="left" alt="Yunibank" border="0" height="16" src="https://rate.am/images/organization/logo/9cf13d95c8214c7e989a242cc0772311.jpg" width="32"/>
+<a href="/am/bank/yunibank">
+    Յունիբանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/yunibank">
+    59
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:35
+  </td>
+<td>
+   382
+  </td>
+<td>
+<span class="lg">
+    387.50
+   </span>
+</td>
+<td>
+   407
+  </td>
+<td>
+<span class="best">
+    416
+   </span>
+</td>
+<td>
+   3.91
+  </td>
+<td>
+   4.10
+  </td>
+<td>
+   471
+  </td>
+<td>
+   491
+  </td>
+</tr>
+<tr id="c4a69322-c3c6-46c0-8edd-1b10cb90d100">
+<td>
+   3.
+  </td>
+<td class="bank">
+<img align="left" alt="Fast-Bank" border="0" height="16" src="https://rate.am/images/organization/logo/767eaf3e45ae41bca8d7e4e481da6501.jpg" width="32"/>
+<a href="/am/bank/fast-bank">
+    Ֆասթ Բանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/fast-bank">
+    30
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+   381
+  </td>
+<td>
+   388
+  </td>
+<td>
+   408
+  </td>
+<td>
+   423
+  </td>
+<td>
+   3.90
+  </td>
+<td>
+   4.05
+  </td>
+<td>
+<span class="best">
+    475
+   </span>
+</td>
+<td>
+   500
+  </td>
+</tr>
+<tr id="e1a68c2e-bc47-4f58-afd2-3b80a8465b14">
+<td>
+   4.
+  </td>
+<td class="bank">
+<img align="left" alt="Arcakhbank" border="0" height="16" src="https://rate.am/images/organization/logo/8.gif" width="32"/>
+<a href="/am/bank/arcakhbank">
+    Արցախբանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/arcakhbank">
+    15
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+   383
+  </td>
+<td>
+   388
+  </td>
+<td>
+   408
+  </td>
+<td>
+   418
+  </td>
+<td>
+   3.87
+  </td>
+<td>
+   4.03
+  </td>
+<td>
+   468
+  </td>
+<td>
+   488
+  </td>
+</tr>
+<tr id="69460818-02ec-456e-8d09-8eeff6494bce">
+<td>
+   5.
+  </td>
+<td class="bank">
+<img align="left" alt="VTBHayastan-Bank" border="0" height="16" src="https://rate.am/images/organization/logo/2ae3fc783f014420a23da55d69552d90.gif" width="32"/>
+<a href="/am/bank/vtbhayastan-bank">
+    ՎՏԲ-Հայաստան Բանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/vtbhayastan-bank">
+    74
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+<span class="bestlg">
+    383.50
+   </span>
+</td>
+<td>
+   388
+  </td>
+<td>
+   408
+  </td>
+<td>
+   419
+  </td>
+<td>
+   3.90
+  </td>
+<td>
+   4.05
+  </td>
+<td>
+   440
+  </td>
+<td>
+   521
+  </td>
+</tr>
+<tr id="0fffdcc4-8e36-49f3-9863-93ad02ce6541">
+<td>
+   6.
+  </td>
+<td class="bank">
+<img align="left" alt="Evocabank" border="0" height="16" src="https://rate.am/images/organization/logo/7d9ba737c27842de87bc5abe9e901525.png" width="32"/>
+<a href="/am/bank/evocabank">
+    Էվոկաբանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/evocabank">
+    14
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+   382
+  </td>
+<td>
+<span class="lg">
+    387.50
+   </span>
+</td>
+<td>
+   407
+  </td>
+<td>
+   417
+  </td>
+<td>
+<span class="best">
+    3.92
+   </span>
+</td>
+<td>
+   4.03
+  </td>
+<td>
+<span class="best">
+    475
+   </span>
+</td>
+<td>
+   490
+  </td>
+</tr>
+<tr id="65351947-217c-4593-9011-941b88ee7baf">
+<td>
+   7.
+  </td>
+<td class="bank">
+<img align="left" alt="Inekobank" border="0" height="16" src="https://rate.am/images/organization/logo/13.gif" width="32"/>
+<a href="/am/bank/inekobank">
+    Ինեկոբանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/inekobank">
+    25
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+   383
+  </td>
+<td>
+<span class="lg">
+    388.50
+   </span>
+</td>
+<td>
+   407
+  </td>
+<td>
+   419
+  </td>
+<td>
+   3.83
+  </td>
+<td>
+   4.08
+  </td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr id="8e9bd4c8-6f4a-4663-ae86-b8fbaf295030">
+<td>
+   8.
+  </td>
+<td class="bank">
+<img align="left" alt="AyDi-Bank" border="0" height="16" src="https://rate.am/images/organization/logo/170e82d5663b4d20ab76303baddfdec4.jpg" width="32"/>
+<a href="/am/bank/aydi-bank">
+    ԱյԴի Բանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/aydi-bank">
+    15
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+<span class="lg">
+    382.50
+   </span>
+</td>
+<td>
+<span class="lg">
+    388.50
+   </span>
+</td>
+<td>
+   407
+  </td>
+<td>
+<span class="lg">
+    418.50
+   </span>
+</td>
+<td>
+   3.80
+  </td>
+<td>
+   4.04
+  </td>
+<td>
+   472
+  </td>
+<td>
+   492
+  </td>
+</tr>
+<tr id="ebd241ce-4a38-45a4-9bcd-c6e607079706">
+<td>
+   9.
+  </td>
+<td class="bank">
+<img align="left" alt="Biblos-Bank-Armenia" border="0" height="16" src="https://rate.am/images/organization/logo/9.gif" width="32"/>
+<a href="/am/bank/biblos-bank-armenia">
+    Բիբլոս Բանկ Արմենիա
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/biblos-bank-armenia">
+    5
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+   383
+  </td>
+<td>
+   388
+  </td>
+<td>
+<span class="best">
+    409
+   </span>
+</td>
+<td>
+   419
+  </td>
+<td>
+   3.78
+  </td>
+<td>
+   4.07
+  </td>
+<td>
+   473
+  </td>
+<td>
+   489
+  </td>
+</tr>
+<tr id="95b795f4-073d-4670-993d-dfb781375a94">
+<td>
+   10.
+  </td>
+<td class="bank">
+<img align="left" alt="Armsvisbank" border="0" height="16" src="https://rate.am/images/organization/logo/7.gif" width="32"/>
+<a href="/am/bank/armsvisbank">
+    Արմսվիսբանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/armsvisbank">
+    1
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+   383
+  </td>
+<td>
+<span class="lg">
+    387.50
+   </span>
+</td>
+<td>
+<span class="best">
+    409
+   </span>
+</td>
+<td>
+<span class="lg">
+    416.50
+   </span>
+</td>
+<td>
+   3.89
+  </td>
+<td>
+   4.02
+  </td>
+<td>
+   463
+  </td>
+<td>
+   490
+  </td>
+</tr>
+<tr id="466fe84c-197f-4174-bc97-e1dc7960edc7">
+<td>
+   11.
+  </td>
+<td class="bank">
+<img align="left" alt="Ardshinbank" border="0" height="16" src="https://rate.am/images/organization/logo/6.gif" width="32"/>
+<a href="/am/bank/ardshinbank">
+    Արդշինբանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/ardshinbank">
+    64
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+   382
+  </td>
+<td>
+   388
+  </td>
+<td>
+   407
+  </td>
+<td>
+   420
+  </td>
+<td>
+   3.90
+  </td>
+<td>
+   4.08
+  </td>
+<td>
+   473
+  </td>
+<td>
+   496
+  </td>
+</tr>
+<tr id="332c7078-97ad-4bf7-b8ee-44d85a9c88d1">
+<td>
+   12.
+  </td>
+<td class="bank">
+<img align="left" alt="EychEsBiSi-Bank" border="0" height="16" src="https://rate.am/images/organization/logo/12.gif" width="32"/>
+<a href="/am/bank/eychesbisi-bank">
+    Էյչ-Էս-Բի-Սի Բանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/eychesbisi-bank">
+    6
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+<span class="lg">
+    382.50
+   </span>
+</td>
+<td>
+<span class="lg">
+    388.50
+   </span>
+</td>
+<td>
+   407
+  </td>
+<td>
+   420
+  </td>
+<td>
+   3.61
+  </td>
+<td>
+   4.14
+  </td>
+<td>
+   472
+  </td>
+<td>
+   491
+  </td>
+</tr>
+<tr id="db08ff22-add9-45ea-a450-1fe5b1993704">
+<td>
+   13.
+  </td>
+<td class="bank">
+<img align="left" alt="HAYBIZNESBANK" border="0" height="16" src="https://rate.am/images/organization/logo/15.gif" width="32"/>
+<a href="/am/bank/haybiznesbank">
+    ՀԱՅԲԻԶՆԵՍԲԱՆԿ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/haybiznesbank">
+    5
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+   383
+  </td>
+<td>
+   388
+  </td>
+<td>
+   407
+  </td>
+<td>
+   419
+  </td>
+<td>
+   3.85
+  </td>
+<td>
+   4.08
+  </td>
+<td>
+   474
+  </td>
+<td>
+   494
+  </td>
+</tr>
+<tr id="2119a3f1-b233-4254-a450-304a2a5bff19">
+<td>
+   14.
+  </td>
+<td class="bank">
+<img align="left" alt="Konvers-Bank" border="0" height="16" src="https://rate.am/images/organization/logo/247e6cb5ede645579a2a6dba26dc6200.jpg" width="32"/>
+<a href="/am/bank/konvers-bank">
+    Կոնվերս Բանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/konvers-bank">
+    34
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+<span class="lg">
+    382.50
+   </span>
+</td>
+<td>
+<span class="lg">
+    388.50
+   </span>
+</td>
+<td>
+   408
+  </td>
+<td>
+   418
+  </td>
+<td>
+   3.78
+  </td>
+<td>
+<span class="best">
+    4.01
+   </span>
+</td>
+<td>
+<span class="best">
+    475
+   </span>
+</td>
+<td>
+   493
+  </td>
+</tr>
+<tr id="989ba942-a5cf-4fc2-b62e-3248c4edfbbc">
+<td>
+   15.
+  </td>
+<td class="bank">
+<img align="left" alt="Ameriabank" border="0" height="16" src="https://rate.am/images/organization/logo/2.gif" width="32"/>
+<a href="/am/bank/ameriabank">
+    Ամերիաբանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/ameriabank">
+    20
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+   382
+  </td>
+<td>
+   388
+  </td>
+<td>
+<span class="lg">
+    405.50
+   </span>
+</td>
+<td>
+<span class="lg">
+    419.50
+   </span>
+</td>
+<td>
+   3.79
+  </td>
+<td>
+   4.09
+  </td>
+<td>
+   471
+  </td>
+<td>
+<span class="best">
+    487
+   </span>
+</td>
+</tr>
+<tr id="f3ffb6cf-dbb6-4d43-b49c-f6d71350d7fb">
+<td>
+   16.
+  </td>
+<td class="bank">
+<img align="left" alt="Acba-bank" border="0" height="16" src="https://rate.am/images/organization/logo/8203181c42c441a68f3a4cd769ab09c6.jpg" width="32"/>
+<a href="/am/bank/acba-bank">
+    Ակբա բանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/acba-bank">
+    62
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+<span class="lg">
+    382.50
+   </span>
+</td>
+<td>
+<span class="lg">
+    388.50
+   </span>
+</td>
+<td>
+   407
+  </td>
+<td>
+   419
+  </td>
+<td>
+   3.90
+  </td>
+<td>
+   4.08
+  </td>
+<td>
+   471
+  </td>
+<td>
+   491
+  </td>
+</tr>
+<tr id="f288c3fc-f524-468c-bff7-fbd9bbc6b8d7">
+<td>
+   17.
+  </td>
+<td class="bank">
+<img align="left" alt="Mellat-bank" border="0" height="16" src="https://rate.am/images/organization/logo/17.gif" width="32"/>
+<a href="/am/bank/mellat-bank">
+    Մելլաթ բանկ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/mellat-bank">
+    1
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+   383
+  </td>
+<td>
+   389
+  </td>
+<td>
+   408
+  </td>
+<td>
+   420
+  </td>
+<td>
+   3.75
+  </td>
+<td>
+   4.05
+  </td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr id="b5bb13d2-8a79-43a8-a538-ffd1e2e21009">
+<td>
+   18.
+  </td>
+<td class="bank">
+<img align="left" alt="HAYEKONOMBANK" border="0" height="16" src="https://rate.am/images/organization/logo/3802fb8e9ca94b29a778c351f16e765d.png" width="32"/>
+<a href="/am/bank/hayekonombank">
+    ՀԱՅԷԿՈՆՈՄԲԱՆԿ
+   </a>
+</td>
+<td>
+<a class="favS" href="/login.aspx" onmouseover="shTT(this, 'favTXT')">
+<img alt="star" height="16" src="../images/s.png" width="16"/>
+<span>
+</span>
+</a>
+</td>
+<td>
+<a href="/am/bank/hayekonombank">
+    54
+   </a>
+</td>
+<td class="date">
+   08 Սեպ, 14:30
+  </td>
+<td>
+<span class="lg">
+    382.50
+   </span>
+</td>
+<td>
+<span class="lg">
+    388.50
+   </span>
+</td>
+<td>
+   407
+  </td>
+<td>
+   420
+  </td>
+<td>
+   3.91
+  </td>
+<td>
+   4.09
+  </td>
+<td>
+   467
+  </td>
+<td>
+   496
+  </td>
+</tr>
+<tr>
+<td colspan="15" style="padding: 0px 0px 0px 10px;">
+<div class="mastersearchlink">
+<a href="/am/search/by-map">
+     Ընտրեք Ձեզ ամենամոտ մասնաճյուղը և խնայեք Ձեր ժամանակը
+    </a>
+</div>
+</td>
+</tr>
+<tr class="btm">
+<td class="fhd" colspan="5" style="text-align:left">
+   Նվազագույնը
+  </td>
+<td class="fhd">
+   380.50
+  </td>
+<td class="fhd">
+   386.50
+  </td>
+<td class="fhd">
+   405
+  </td>
+<td class="fhd">
+   416
+  </td>
+<td class="fhd">
+   3.61
+  </td>
+<td class="fhd">
+   4.01
+  </td>
+<td class="fhd">
+   440
+  </td>
+<td class="fhd">
+   487
+  </td>
+</tr>
+<tr class="btm">
+<td class="fhd" colspan="5" style="text-align:left">
+   Առավելագույնը
+  </td>
+<td class="fhd">
+   383.50
+  </td>
+<td class="fhd">
+   389
+  </td>
+<td class="fhd">
+   409
+  </td>
+<td class="fhd">
+   423
+  </td>
+<td class="fhd">
+   3.92
+  </td>
+<td class="fhd">
+   4.14
+  </td>
+<td class="fhd">
+   475
+  </td>
+<td class="fhd">
+   521
+  </td>
+</tr>
+<tr class="btm">
+<td class="fhd" colspan="5" style="text-align:left">
+   Միջինը
+  </td>
+<td class="fhd">
+   382.42
+  </td>
+<td class="fhd">
+   388.06
+  </td>
+<td class="fhd">
+   407.31
+  </td>
+<td class="fhd">
+   418.86
+  </td>
+<td class="fhd">
+   3.84
+  </td>
+<td class="fhd">
+   4.07
+  </td>
+<td class="fhd">
+   468.75
+  </td>
+<td class="fhd">
+   494.31
+  </td>
+</tr>
+<tr class="btm">
+<td class="fhd" colspan="5" style="text-align:left">
+   Տատանում (Սեպ 06)
+  </td>
+<td class="fldown">
+   -0.03
+  </td>
+<td class="flup">
+   +0.05
+  </td>
+<td class="fldown">
+   -1.05
+  </td>
+<td class="fldown">
+   -0.95
+  </td>
+<td class="fldown">
+   -0.01
+  </td>
+<td class="fldown">
+   -0.01
+  </td>
+<td class="fldown">
+   -2.67
+  </td>
+<td class="fldown">
+   -2.32
+  </td>
+</tr>
+</table>
+</div>
+</body>
+</html>
